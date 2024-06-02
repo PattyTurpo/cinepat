@@ -13,8 +13,39 @@
         android:theme="@style/Theme.Cinepat"
         tools:targetApi="31">
         <activity
+            android:name=".Configuracion"
+            android:exported="false" />
+        <activity
+            android:name=".PeliculasPorFavoritos"
+            android:exported="false" />
+        <activity
+            android:name=".PeliculasPorFechaDeEmision"
+            android:exported="false" />
+        <activity
+            android:name=".PeliculasPorGenero"
+            android:exported="false" />
+        <activity
+            android:name=".AgregarUnaPelicula"
+            android:exported="false" />
+        <activity
+            android:name=".MiPerfil"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaInicio"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaSuscripcion"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaSuscripción"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.Pant_de_espera">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

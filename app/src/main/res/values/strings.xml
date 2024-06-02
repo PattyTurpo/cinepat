@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">cinepat</string>
+    <string name="hint_email">Email</string>
+    <string name="busqueda">Buscar aqui</string>
+    <string name="Nombres">Nombres</string>
+    <string name="Apellidos">Apellidos</string>
+    <string name="Fecha_de_nacimiento">Fecha de nacimiento </string>
+    <string name="Correo_Electronico">Correo electronico</string>
+    <string name="logo">logo</string>
+    <string name="perfil">perfil</string>
+
 </resources>

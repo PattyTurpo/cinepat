@@ -1,141 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#113848"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:id="@+id/horizontal_layout_1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp"
-        tools:context=".MainActivity"
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="-39dp">
 
-        <LinearLayout
-            android:id="@+id/horizontal_layout_3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="16dp"
-            tools:context=".MainActivity"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="95dp">
-            <!-- Persona 4 -->
-
-            <TextView
-                android:id="@+id/paterno"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:text="Paterno" />
-
-            <TextView
-                android:id="@+id/k"
-                android:layout_width="187dp"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:background="#1111"
-                android:text="" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/horizontal_layout_4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="16dp"
-            tools:context=".MainActivity"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="95dp">
-            <!-- Persona 4 -->
-
-            <TextView
-                android:id="@+id/materno"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:text="Materno" />
-
-            <TextView
-                android:id="@+id/a"
-                android:layout_width="182dp"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:background="#1111"
-                android:text="" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/horizontal_layout_5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="16dp"
-            tools:context=".MainActivity"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="95dp">
-            <!-- Persona 4 -->
-
-            <TextView
-                android:id="@+id/nombre"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:text="Nombre:" />
-
-            <TextView
-                android:id="@+id/az"
-                android:layout_width="184dp"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:background="#1111"
-                android:text="" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/horizontal_layout_6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="16dp"
-            tools:context=".MainActivity"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="95dp">
-            <!-- Persona 4 -->
-
-            <TextView
-                android:id="@+id/nombre_lucia"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:text="Edad" />
-
-            <TextView
-                android:id="@+id/aez"
-                android:layout_width="209dp"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:background="#1111"
-                android:hint="16"
-                android:text="" />
-
-        </LinearLayout>
-
-        <Button
-            android:layout_width="305dp"
-            android:layout_height="50dp"
-            android:text="Guardar" />
-
-
-    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="326dp"
+        android:layout_height="372dp"
+        android:layout_marginTop="176dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cinepat" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
