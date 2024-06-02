@@ -2,7 +2,12 @@
     <string name="app_name">cinepat</string>
     <string name="hint_email">Email</string>
     <string name="busqueda">Buscar aqui</string>
+    <string name="MiPerfil">Mi Perfil</string>
+    <string name="AgregarNuevaPelicula">Agregar Nueva Pelicula</string>
     <string name="Nombres">Nombres</string>
+    <string name="Nombre">Nombre</string>
+    <string name="Contraseña">Contraseña</string>
+    <string name="NombreDeLaPelicula">Nombre de la pelicula</string>
     <string name="Apellidos">Apellidos</string>
     <string name="Fecha_de_nacimiento">Fecha de nacimiento </string>
     <string name="Correo_Electronico">Correo electronico</string>

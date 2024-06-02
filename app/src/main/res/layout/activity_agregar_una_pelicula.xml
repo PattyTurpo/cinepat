@@ -5,6 +5,139 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo4"
     tools:context=".AgregarUnaPelicula">
 
+    <TextView
+        android:id="@+id/micinereftextView"
+        android:layout_width="75dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="24dp"
+        android:text="Mi CineRef"
+        app:layout_constraintEnd_toStartOf="@+id/busquedaEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/busquedaEditText"
+        android:layout_width="203dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="56dp"
+        android:hint="@string/busqueda"
+        android:padding="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/menuImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <ImageView
+        android:id="@+id/menuImageView"
+        android:layout_width="35dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="32dp"
+        android:contentDescription="@string/perfil"
+        android:src="@drawable/menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/perfilImageView"
+        android:layout_width="69dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/perfil"
+        android:src="@drawable/perfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/busquedaEditText" />
+
+    <ImageView
+        android:id="@+id/homeImageView"
+        android:layout_width="65dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/perfil"
+        android:src="@drawable/home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/MiPerfiltextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/MiPerfil"
+        app:layout_constraintTop_toBottomOf="@+id/perfilImageView"
+        tools:layout_editor_absoluteX="179dp" />
+
+    <TextView
+        android:id="@+id/AgregarNuevaPeliculatextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AgregarNuevaPelicula"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MiPerfiltextView" />
+
+    <TextView
+        android:id="@+id/nombretextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/Nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AgregarNuevaPeliculatextView" />
+
+    <EditText
+        android:id="@+id/nombreEditText"
+        android:layout_width="203dp"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:hint="@string/NombreDeLaPelicula"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="246dp" />
+
+    <TextView
+        android:id="@+id/Caratula_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Caratula o Etiqueta:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombreEditText" />
+
+    <TextView
+        android:id="@+id/Referencia_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Referencia :"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="439dp" />
+
+    <TextView
+        android:id="@+id/Genero_textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Genero :"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="508dp" />
+
+    <TextView
+        android:id="@+id/Fecha_De_Emision_textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha de Emision :"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="570dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
