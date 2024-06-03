@@ -85,7 +85,7 @@
     <Button
         android:id="@+id/loginButton"
         android:layout_width="316dp"
-        android:layout_height="41dp"
+        android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:text="Iniciar sesión"
         app:layout_constraintEnd_toEndOf="parent"

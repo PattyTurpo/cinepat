@@ -34,11 +34,12 @@
         android:id="@+id/menuImageView"
         android:layout_width="35dp"
         android:layout_height="36dp"
-        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
         android:contentDescription="@string/perfil"
         android:src="@drawable/menu"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/perfilImageView"
@@ -53,14 +54,16 @@
 
     <ImageView
         android:id="@+id/homeImageView"
-        android:layout_width="65dp"
-        android:layout_height="72dp"
+        android:layout_width="67dp"
+        android:layout_height="66dp"
         android:layout_marginBottom="16dp"
         android:contentDescription="@string/perfil"
         android:src="@drawable/home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Fecha_De_Emision_EditText"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/MiPerfiltextView"
@@ -68,8 +71,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/MiPerfil"
-        app:layout_constraintTop_toBottomOf="@+id/perfilImageView"
-        tools:layout_editor_absoluteX="179dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/perfilImageView" />
 
     <TextView
         android:id="@+id/AgregarNuevaPeliculatextView"
@@ -96,13 +100,14 @@
         android:id="@+id/nombreEditText"
         android:layout_width="203dp"
         android:layout_height="48dp"
+        android:layout_marginTop="4dp"
         android:background="@color/white"
         android:hint="@string/NombreDeLaPelicula"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.158"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="246dp" />
+        app:layout_constraintTop_toBottomOf="@+id/nombretextView" />
 
     <TextView
         android:id="@+id/Caratula_textView"
@@ -111,33 +116,92 @@
         android:layout_marginTop="12dp"
         android:text="Caratula o Etiqueta:"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintHorizontal_bias="0.114"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nombreEditText" />
 
-    <TextView
-        android:id="@+id/Referencia_textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Referencia :"
+
+    <EditText
+        android:id="@+id/Referencia_EditText"
+        android:layout_width="202dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:hint="@string/NombreDeLaPelicula"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintHorizontal_bias="0.157"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="439dp" />
+        app:layout_constraintTop_toBottomOf="@+id/Referencia_textView" />
+
 
     <TextView
         android:id="@+id/Genero_textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:text="Genero :"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="508dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Referencia_EditText" />
+
+    <TextView
+        android:id="@+id/Referencia_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Referencia :"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/Genero_EditText"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:hint="@string/NombreDeLaPelicula"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Genero_textView7" />
+
+    <EditText
+        android:id="@+id/Fecha_De_Emision_EditText"
+        android:layout_width="199dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:hint="@string/NombreDeLaPelicula"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Fecha_De_Emision_textView8" />
 
     <TextView
         android:id="@+id/Fecha_De_Emision_textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="Fecha de Emision :"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="570dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Genero_EditText" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="57dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Caratula_textView"
+        app:srcCompat="@drawable/fondo5" />
 </androidx.constraintlayout.widget.ConstraintLayout>
