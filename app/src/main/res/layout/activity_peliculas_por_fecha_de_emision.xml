@@ -42,6 +42,16 @@
         app:layout_constraintWidth_percent="0.8" />
 
     <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="39dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.728"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/busqueda" />
+    <ImageView
         android:id="@+id/perfilImageView"
         android:layout_width="69dp"
         android:layout_height="81dp"

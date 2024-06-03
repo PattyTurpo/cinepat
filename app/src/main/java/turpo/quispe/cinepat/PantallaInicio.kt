@@ -16,6 +16,11 @@ class PantallaInicio : AppCompatActivity() {
         setContentView(R.layout.activity_pantalla_inicio)
 
 
+        val menuImageView: ImageView = findViewById(R.id.menuImageView)
+        menuImageView.setOnClickListener {
+            val intent = Intent(this, Configuracion::class.java)
+            startActivity(intent)
+        }
         val imageView: ImageView = findViewById(R.id.perfilImageView)
         imageView.setOnClickListener {
             val intent = Intent(this, MiPerfil::class.java)

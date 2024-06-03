@@ -37,9 +37,6 @@
             android:name=".PantallaSuscripcion"
             android:exported="false" />
         <activity
-            android:name=".PantallaSuscripción"
-            android:exported="false" />
-        <activity
             android:name=".MenuActivity"
             android:exported="false" />
         <activity
