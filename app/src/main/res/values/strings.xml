@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">cinepat</string>
+    <string name="app_name">CineRef</string>
     <string name="hint_email">Email</string>
     <string name="busqueda">Buscar aqui</string>
     <string name="MiPerfil">Mi Perfil</string>

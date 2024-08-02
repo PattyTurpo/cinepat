@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -8,6 +9,7 @@
     android:background="@drawable/fondo3"
     tools:context=".PantallaSuscripcion">
 
+    <!-- Logo -->
     <ImageView
         android:id="@+id/logoImageView"
         android:layout_width="200dp"
@@ -20,21 +22,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Nombres EditText -->
     <EditText
         android:id="@+id/nombresEditText"
         android:layout_width="159dp"
         android:layout_height="48dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="240dp"
         android:background="@drawable/edittext_rounded_corner"
         android:hint="@string/Nombres"
         android:padding="10dp"
         android:textColor="@color/verde"
         android:textColorHint="@color/hint"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.126"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Apellidos EditText -->
     <EditText
         android:id="@+id/ApellidosEditText"
         android:layout_width="178dp"
@@ -46,10 +49,11 @@
         android:textColor="@color/verde"
         android:textColorHint="@color/hint"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.918"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toEndOf="@+id/nombresEditText"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Fecha de Nacimiento EditText -->
     <EditText
         android:id="@+id/Fecha_De_Nacimiento_EditText"
         android:layout_width="359dp"
@@ -61,10 +65,10 @@
         android:textColor="@color/verde"
         android:textColorHint="@color/hint"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.615"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nombresEditText" />
 
+    <!-- Correo Electrónico EditText -->
     <EditText
         android:id="@+id/Correo_Electronico_EditText"
         android:layout_width="359dp"
@@ -76,10 +80,10 @@
         android:textColor="@color/verde"
         android:textColorHint="@color/hint"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.615"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Fecha_De_Nacimiento_EditText" />
 
+    <!-- Contraseña EditText -->
     <EditText
         android:id="@+id/Contraseña_EditText"
         android:layout_width="357dp"
@@ -91,21 +95,25 @@
         android:textColor="@color/verde"
         android:textColorHint="@color/hint"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.64"
         app:layout_constraintStart_toStartOf="parent"
+        android:inputType="textPassword"
         app:layout_constraintTop_toBottomOf="@+id/Correo_Electronico_EditText" />
 
-    <Button
+    <!-- Botón de Registro -->
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/loginButton"
         android:layout_width="316dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
+        android:background="@drawable/button_gradient_rounded"
+        android:textColor="@color/white"
         android:text="Registrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Contraseña_EditText" />
 
+    <!-- Texto de Suscripción -->
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
@@ -118,6 +126,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginButton" />
 
+    <!-- Imagen de Facebook -->
     <ImageView
         android:id="@+id/fbImageView"
         android:layout_width="47dp"
@@ -130,17 +139,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
+    <!-- Imagen de Google -->
     <ImageView
         android:id="@+id/GoogleImageView"
         android:layout_width="54dp"
         android:layout_height="48dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="160dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="140dp"
         android:contentDescription="@string/logo"
         android:src="@drawable/google"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
+    <!-- Texto de Pie de Página -->
     <TextView
         android:id="@+id/footerTextView"
         android:layout_width="wrap_content"

@@ -1,16 +1,17 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id("org.jetbrains.kotlin.kapt")
 }
 
 android {
     namespace = "turpo.quispe.cinepat"
-    compileSdk = 34
+    compileSdk = 34 // Mantén compileSdk en 34 para usar las últimas APIs disponibles
 
     defaultConfig {
         applicationId = "turpo.quispe.cinepat"
-        minSdk = 33
-        targetSdk = 34
+        minSdk = 29 // Establece minSdk en 29 para soportar Android 10
+        targetSdk = 34 // Mantén targetSdk en 34 para cumplir con los requisitos de Google Play
         versionCode = 1
         versionName = "1.0"
 
@@ -32,6 +33,7 @@ android {
     }
 }
 
+
 dependencies {
 
     implementation(libs.androidx.core.ktx)
@@ -43,4 +45,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation(libs.volley)
+    implementation(libs.glide)
+    kapt(libs.glide.compiler)
 }

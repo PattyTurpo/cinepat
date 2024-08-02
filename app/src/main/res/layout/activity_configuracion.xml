@@ -86,6 +86,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/PrivacidadtextView" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Cerrar_Sesion"
+        android:layout_width="151dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/button_gradient_rounded"
+        android:text="Cerrar Sesion"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/DipositivotextView"
         android:layout_width="wrap_content"

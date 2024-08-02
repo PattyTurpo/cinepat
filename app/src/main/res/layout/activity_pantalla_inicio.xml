@@ -57,42 +57,44 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/perfilImageView" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/genero"
         android:layout_width="190dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="8dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/button_gradient_rounded"
+        android:textColor="@color/white"
         android:text="Genero"
-        android:background="@drawable/edittext_rounded_corner"
-        app:layout_constraintBottom_toTopOf="@+id/favoritos"
         app:layout_constraintEnd_toStartOf="@+id/fecha_de_emision"
-        app:layout_constraintHorizontal_bias="0.695"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logoImageView"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
-        android:id="@+id/favoritos"
-        android:layout_width="190dp"
-        android:layout_height="50dp"
-        android:background="@drawable/edittext_rounded_corner"
-        android:layout_marginTop="180dp"
-        android:text="Favoritos"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/fecha_de_emision"
-        android:layout_width="190dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="4dp"
-        android:background="@drawable/edittext_rounded_corner"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/button_gradient_rounded"
+        android:textColor="@color/white"
         android:text="Fecha de Emision"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/perfilImageView" />
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/favoritos"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="184dp"
+        android:background="@drawable/button_gradient_rounded"
+        android:textColor="@color/white"
+        android:text="Favoritos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/homeImageView"
@@ -119,41 +121,58 @@
         app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toEndOf="@+id/homeImageView" />
 
-    <View
-        android:id="@+id/placeholder3"
-        android:layout_width="347dp"
-        android:layout_height="133dp"
-        android:layout_marginTop="244dp"
-        android:background="@drawable/edittext_rounded_corner"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.437"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <View
-        android:id="@+id/placeholder2"
-        android:layout_width="349dp"
-        android:layout_height="130dp"
-        android:layout_marginTop="12dp"
-        android:background="@drawable/edittext_rounded_corner"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.451"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/placeholder3" />
-
-    <View
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/imageView6"
         android:layout_width="349dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="12dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="540dp"
         android:background="@drawable/edittext_rounded_corner"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.451"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/placeholder2" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="4dp"
+            android:src="@drawable/batman"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="146dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:text="Batman"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/imageView3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewReference3"
+            android:layout_width="249dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="8dp"
+            android:text="El filme, dirigido por Matt Reeves y protagonizado por Robert Pattinson, sigue a un joven Bruce Wayne que lleva solo dos años..."
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.3"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/busqueda"
         android:layout_width="39dp"
         android:layout_height="41dp"
         android:layout_marginTop="32dp"
@@ -162,5 +181,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/busqueda" />
+
+    <TableLayout
+        android:id="@+id/tbPeliculas"
+        android:layout_width="373dp"
+        android:layout_height="282dp"
+        android:layout_marginTop="252dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

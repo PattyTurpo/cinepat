@@ -52,11 +52,14 @@
         app:layout_constraintTop_toBottomOf="@id/emailEditText"
         app:layout_constraintWidth_percent="0.8" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/loginButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:background="@drawable/button_gradient_rounded"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hint"
         android:text="Iniciar sesión"
         app:layout_constraintTop_toBottomOf="@id/passwordEditText"
         app:layout_constraintStart_toStartOf="parent"

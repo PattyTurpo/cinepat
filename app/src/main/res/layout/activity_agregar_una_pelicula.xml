@@ -10,25 +10,28 @@
 
     <TextView
         android:id="@+id/micinereftextView"
-        android:layout_width="75dp"
-        android:layout_height="21dp"
-        android:layout_marginTop="24dp"
-        android:textColor="@color/white"
+        android:layout_width="74dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="28dp"
         android:text="Mi CineRef"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/busquedaEditText"
+        app:layout_constraintHorizontal_bias="0.596"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/busquedaEditText"
-        android:layout_width="202dp"
-        android:layout_height="48dp"
+        android:layout_width="184dp"
+        android:layout_height="49dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="56dp"
+        android:layout_marginEnd="16dp"
         android:hint="@string/busqueda"
         android:padding="10dp"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toStartOf="@+id/menuImageView"
+        app:layout_constraintEnd_toStartOf="@+id/perfilImageView"
+        app:layout_constraintHorizontal_bias="0.991"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintWidth_percent="0.8" />
 
@@ -38,7 +41,7 @@
         android:layout_height="34dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.712"
+        app:layout_constraintHorizontal_bias="0.703"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/busqueda" />
@@ -47,46 +50,47 @@
         android:id="@+id/menuImageView"
         android:layout_width="35dp"
         android:layout_height="36dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="20dp"
         android:contentDescription="@string/perfil"
         android:src="@drawable/menu"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toEndOf="@+id/homeImageView" />
 
     <ImageView
         android:id="@+id/perfilImageView"
-        android:layout_width="66dp"
-        android:layout_height="71dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="63dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
         android:contentDescription="@string/perfil"
         android:src="@drawable/perfil"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/busquedaEditText" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/homeImageView"
         android:layout_width="44dp"
         android:layout_height="41dp"
+        android:layout_marginStart="148dp"
         android:layout_marginBottom="16dp"
         android:contentDescription="@string/perfil"
         android:src="@drawable/home"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Fecha_De_Emision_EditText"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/MiPerfiltextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:textColor="@color/white"
+        android:layout_marginTop="12dp"
         android:text="@string/MiPerfil"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/perfilImageView" />
 
@@ -128,57 +132,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nombretextView" />
 
-
-    <TextView
-        android:id="@+id/Caratula_textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:textColor="@color/white"
-        android:text="Caratula o Etiqueta:"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.114"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombreEditText" />
-
-    <EditText
-        android:id="@+id/Referencia_EditText"
-        android:layout_width="252dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/edittext_rounded_corner"
-        android:hint="Referencia de la pelicula"
-        android:padding="10dp"
-        android:textColor="@color/verde"
-        android:textColorHint="@color/hint"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.207"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Referencia_textView" />
-
     <TextView
         android:id="@+id/Genero_textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="Genero :"
+        android:text="Género :"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.094"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Referencia_EditText" />
-
-    <TextView
-        android:id="@+id/Referencia_textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="Referencia :"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.097"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/nombreEditText" />
 
     <EditText
         android:id="@+id/Genero_EditText"
@@ -188,12 +152,24 @@
         android:background="@drawable/edittext_rounded_corner"
         android:textColor="@color/verde"
         android:textColorHint="@color/hint"
-        android:hint="accion"
+        android:hint="Acción"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.156"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Genero_textView7" />
+
+    <TextView
+        android:id="@+id/Fecha_De_Emision_textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Fecha de Emisión :"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Genero_EditText" />
 
     <EditText
         android:id="@+id/Fecha_De_Emision_EditText"
@@ -205,42 +181,108 @@
         android:padding="10dp"
         android:textColor="@color/verde"
         android:textColorHint="@color/hint"
+        android:focusable="false"
+        android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.155"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Fecha_De_Emision_textView8" />
 
     <TextView
-        android:id="@+id/Fecha_De_Emision_textView8"
+        android:id="@+id/Calificacion_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="Fecha de Emision :"
+        android:text="Calificación (1-10) :"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Genero_EditText" />
+        app:layout_constraintTop_toBottomOf="@+id/Fecha_De_Emision_EditText" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="57dp"
-        android:layout_height="69dp"
-        android:layout_marginTop="12dp"
+    <EditText
+        android:id="@+id/Calificacion_EditText"
+        android:layout_width="199dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:inputType="number"
+        android:background="@drawable/edittext_rounded_corner"
+        android:hint="Calificación"
+        android:padding="10dp"
+        android:textColor="@color/verde"
+        android:textColorHint="@color/hint"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintHorizontal_bias="0.155"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Caratula_textView"
-        app:srcCompat="@drawable/fondo5" />
+        app:layout_constraintTop_toBottomOf="@+id/Calificacion_textView" />
 
-    <Button
-        android:id="@+id/button"
+    <TextView
+        android:id="@+id/Referencia_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="Agregar una pelicula"
+        android:text="Referencia :"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.097"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Fecha_De_Emision_EditText" />
+        app:layout_constraintTop_toBottomOf="@+id/Calificacion_EditText" />
+
+    <EditText
+        android:id="@+id/Referencia_EditText"
+        android:layout_width="252dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext_rounded_corner"
+        android:hint="Referencia de la película"
+        android:padding="10dp"
+        android:textColor="@color/verde"
+        android:textColorHint="@color/hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Referencia_textView" />
+
+    <TextView
+        android:id="@+id/Caratula_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/white"
+        android:text="Carátula o Etiqueta:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Referencia_EditText" />
+
+    <EditText
+        android:id="@+id/LinkImagen_EditText"
+        android:layout_width="252dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext_rounded_corner"
+        android:hint="Link de la imagen"
+        android:inputType="textUri"
+        android:padding="10dp"
+        android:textColor="@color/verde"
+        android:textColorHint="@color/hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Caratula_textView" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/BtnAgregar"
+        android:layout_width="185dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_gradient_rounded"
+        android:onClick="clickBtnAgregar"
+        android:text="Agregar una película"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LinkImagen_EditText" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,7 +6,7 @@
     </style>
     <style name="Theme.Pant_de_espera" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/verde</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo2</item>
         <item name="windowSplashScreenAnimationDuration">300</item>
         <item name="postSplashScreenTheme">@style/Base.Theme.Cinepat</item>
     </style>
