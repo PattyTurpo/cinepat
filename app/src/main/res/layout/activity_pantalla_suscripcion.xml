@@ -64,6 +64,8 @@
         android:padding="10dp"
         android:textColor="@color/verde"
         android:textColorHint="@color/hint"
+        android:focusable="false"
+        android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nombresEditText" />
