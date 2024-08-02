@@ -59,6 +59,16 @@ class AgregarUnaPelicula : AppCompatActivity() {
         val resultadoPost = object : StringRequest(Request.Method.POST, url,
             Response.Listener<String> { response ->
                 Toast.makeText(this, "Película insertada exitosamente", Toast.LENGTH_LONG).show()
+
+                // Enviar la información de la película a PantallaInicio
+                val intent = Intent(this, PantallaInicio::class.java)
+                intent.putExtra("nombre", nombreEditText?.text.toString())
+                intent.putExtra("genero", Genero_EditText?.text.toString())
+                intent.putExtra("fecha", Fecha_De_Emision_EditText?.text.toString())
+                intent.putExtra("calificacion", Calificacion_EditText?.text.toString())
+                intent.putExtra("referencia", Referencia_EditText?.text.toString())
+                intent.putExtra("imagen", LinkImagen_EditText?.text.toString())
+                startActivity(intent)
             }, Response.ErrorListener { error ->
                 error.printStackTrace()
                 Toast.makeText(this, "Error: ${error.message}", Toast.LENGTH_LONG).show()
@@ -76,4 +86,5 @@ class AgregarUnaPelicula : AppCompatActivity() {
         }
         queue.add(resultadoPost)
     }
+
 }

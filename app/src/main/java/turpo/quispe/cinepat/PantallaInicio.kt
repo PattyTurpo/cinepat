@@ -36,43 +36,17 @@ class PantallaInicio : AppCompatActivity() {
         val queue = Volley.newRequestQueue(this)
         val url = "https://3b0c-181-176-111-80.ngrok-free.app/api/peliculas"
 
-        val jsonArrayRequest = JsonArrayRequest(Request.Method.GET, url, null,
-            Response.Listener { response ->
-                try {
-                    for (i in 0 until response.length()) {
-                        val jsonObject = response.getJSONObject(i)
-                        val pelicula = LayoutInflater.from(this).inflate(R.layout.tabla_row_np, null) as TableRow
-                        val nombreEditText = pelicula.findViewById<TextView>(R.id.nombreEditText)
-                        val Genero_EditText = pelicula.findViewById<TextView>(R.id.Genero_EditText)
-                        val Fecha_De_Emision_EditText = pelicula.findViewById<TextView>(R.id.Fecha_De_Emision_EditText)
-                        val Referencia_EditText = pelicula.findViewById<TextView>(R.id.Referencia_EditText)
-                        val Calificacion_EditText = pelicula.findViewById<TextView>(R.id.Calificacion_EditText)
-                        // Si tienes una imagen para mostrar, puedes usar una biblioteca como Glide o Picasso aquí
-                        val imageFilterView = pelicula.findViewById<ImageView>(R.id.imageFilterView)
+        // Comprobar si hay datos de una nueva película
+        val nombre = intent.getStringExtra("nombre")
+        val genero = intent.getStringExtra("genero")
+        val fecha = intent.getStringExtra("fecha")
+        val calificacion = intent.getStringExtra("calificacion")
+        val referencia = intent.getStringExtra("referencia")
+        val imagen = intent.getStringExtra("imagen")
 
-                        nombreEditText.text = jsonObject.getString("nombre")
-                        Genero_EditText.text = jsonObject.getString("genero")
-
-
-
-                        Fecha_De_Emision_EditText.text = jsonObject.getString("fecha")
-                        Referencia_EditText.text = jsonObject.getString("referencia")
-                        Calificacion_EditText.text = jsonObject.getString("calificacion")
-                        // Cargar imagen con Glide o Picasso
-                        val imageUrl = jsonObject.getString("imagen")
-                        Glide.with(this).load(imageUrl).into(imageFilterView)
-
-                        tbPeliculas?.addView(pelicula)
-                    }
-                } catch (e: JSONException) {
-                    e.printStackTrace()
-                }
-            },
-            Response.ErrorListener { error ->
-                error.printStackTrace()
-            }
-        )
-        queue.add(jsonArrayRequest)
+        if (nombre != null && genero != null && fecha != null && calificacion != null && referencia != null && imagen != null) {
+            agregarFilaPelicula(nombre, genero, fecha, calificacion, referencia, imagen)
+        }
 
         val menuImageView: ImageView = findViewById(R.id.menuImageView)
         menuImageView.setOnClickListener {
@@ -116,4 +90,28 @@ class PantallaInicio : AppCompatActivity() {
             insets
         }
     }
+
+    // Función para agregar una fila a la tabla
+    fun agregarFilaPelicula(nombre: String, genero: String, fecha: String, calificacion: String, referencia: String, imagen: String) {
+        val inflater = LayoutInflater.from(this)
+        val row = inflater.inflate(R.layout.tabla_row_np, null) as TableRow
+
+        val nombreTextView = row.findViewById<TextView>(R.id.nombreEditText)
+        val generoTextView = row.findViewById<TextView>(R.id.Genero_EditText)
+        val fechaTextView = row.findViewById<TextView>(R.id.Fecha_De_Emision_EditText)
+        val calificacionTextView = row.findViewById<TextView>(R.id.Calificacion_EditText)
+        val referenciaTextView = row.findViewById<TextView>(R.id.Referencia_EditText)
+        val imagenImageView = row.findViewById<ImageView>(R.id.imageFilterView)
+
+        nombreTextView.text = nombre
+        generoTextView.text = genero
+        fechaTextView.text = fecha
+        calificacionTextView.text = calificacion
+        referenciaTextView.text = referencia
+        Glide.with(this).load(imagen).into(imagenImageView)
+
+        tbPeliculas?.addView(row)
+    }
+
+
 }
